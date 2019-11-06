@@ -2,10 +2,13 @@ let options = diaoptions;
 
 //add pixels and changes bar color depeneding on the level of public opinion
 function addpx(px, toadd) {
-    barnum = (parseInt(px.replace(/px/, "")) + parseInt(toadd));
+    let barnum = (parseInt(px.replace(/px/, "")) + parseInt(toadd));
+    let barheight = $(".progress-bar-vertical").css("min-height");
+    barheight = (parseInt(barheight.replace(/px/, "")));
+    let percent = barnum / barheight;
+    percent = percent * 100;
 
-
-    if (barnum > 700) {
+    if (percent > 99.99) {
         //high gameover
         $("#bar").removeClass("bg-success");
         $("#bar").addClass("bg-danger");
@@ -13,23 +16,23 @@ function addpx(px, toadd) {
             "height": "700px"
         });
         gameover(1);
-    } else if (barnum < 0) {
+    } else if (percent < 0) {
         //low gameover
         $("#bar").css({
             "height": "0px"
         });
         gameover(0);
-    } else if (barnum < 700 && barnum > 525) {
+    } else if (percent < 100 && percent > 75) {
         //bar is yellow for high
         $("#bar").removeClass("bg-success");
         $("#bar").removeClass("bg-warning");
         $("#bar").addClass("bg-warning");
-    } else if (barnum < 525 && barnum > 175) {
+    } else if (percent < 75 && percent > 25) {
         //bar is green
         $("#bar").removeClass("bg-warning");
         $("#bar").removeClass("bg-success");
         $("#bar").addClass("bg-success");
-    } else if (barnum < 175) {
+    } else if (percent < 25) {
         //bar is yellow for low
         $("#bar").removeClass("bg-success");
         $("#bar").removeClass("bg-warning");
