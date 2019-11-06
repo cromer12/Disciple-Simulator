@@ -2,7 +2,7 @@ let options = diaoptions;
 
 //add pixels and changes bar color depeneding on the level of public opinion
 function addpx(px, toadd) {
-    let barnum = (parseInt(px.replace(/px/, "")) + parseInt(toadd));
+    let barnum = (parseInt(px.replace(/px/, "")) + parseInt(toadd * 10));
     let barheight = $(".progress-bar-vertical").css("min-height");
     barheight = (parseInt(barheight.replace(/px/, "")));
     let percent = barnum / barheight;
