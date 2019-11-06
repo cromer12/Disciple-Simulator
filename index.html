@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Disciple Simulator</title>
+    <link href="https://fonts.googleapis.com/css?family=Merienda+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+    <script type="text/javascript" src="js/data.js"></script>
+    <script type="text/javascript" src="js/lib/jquery-3.4.1.min.js"></script>
+    <script type="text/javascript" src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+</head>
+
+<body>
+    <!-- TITLE CONTAINER -->
+    <div class="container display" style="height: 100%;" id="title-container">
+        <div class="row h-100">
+            <div class="col-sm-12 my-auto">
+                <div id="title-wrapper">
+                    <div class="w-100 mx-auto text-center" id="title-text">Disciple Simulator</div>
+                    <div class="w-100 mx-auto text-center" id="start-btn">
+                        <div class="btn btn-success btn-lg"
+                            style="background-color: rgba(242, 200, 94, 0.8); border: 1px solid black; color: black;">
+                            Begin
+                            Journey</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- STORY CONTAINER-->
+    <div class="container " style="height: 100%;" id="story-container">
+        <div class="row">
+            <div class="col-sm-2"></div>
+            <div class="col-sm-8">
+                <div class="row">
+                    <div class="col-sm-12 my-auto">
+                        <div id="story-wrapper">
+                            <div class="w-100 mx-auto text-center" id="story-title">Scene Title</div>
+                            <hr>
+                            <div class="w-100 mx-auto text-center" id="story-text">Story Text Story Text Story
+                                Text
+                                Story
+                                Text
+                                Story Text Story Text Story Text Story Text Story Text Story Text Story Text Story Text
+                                Story
+                                Text Story Text Story Text Story Text Story Text Story Text Story Text Story Text Story
+                                Text
+                                Story Text Story Text Story Text Story Text Story Text Story Text Story Text Story Text
+                                Story
+                                Text Story Text Story Text Story Text Story Text Story Text
+                            </div>
+
+                            <div class="w-100 mx-auto text-center" id="response-text"></div>
+                            <div class="w-100 mx-auto text-center" id="gameover-text"></div>
+                            <div class="w-100 mx-auto text-center" id="gameover-btn">
+                                <a href="index.html">
+                                    <btn class="btn btn-danger btn-lg">Return to the Beginning?</btn>
+                                </a>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="seperator"></div>
+                <!-- Choice Selection Section -->
+                <a>
+                    <div class="row" id="dia-1" data-id="1">
+                        <div class="col-sm-12 my-auto">
+                            <div id="story-wrapper">
+                                <div class="w-100 mx-auto dia-text" id="choicetext1">Choice 1</div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <a>
+                    <div class="row" id="dia-2" data-id="2">
+                        <div class="col-sm-12 my-auto">
+                            <div id="story-wrapper">
+                                <div class="w-100 mx-auto dia-text" id="choicetext2">Choice 1</div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <a>
+                    <div class="row" id="dia-3" data-id="3">
+                        <div class="col-sm-12 my-auto">
+                            <div id="story-wrapper">
+                                <div class="w-100 mx-auto dia-text" id="choicetext3">Choice 1</div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <a>
+                    <div class="row" id="dia-4" data-id="4">
+                        <div class="col-sm-12 my-auto">
+                            <div id="story-wrapper">
+                                <div class="w-100 mx-auto dia-text" id="choicetext4">Choice 1</div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <!-- Bar Section -->
+            <div class="col-sm-2">
+                <div class="text-center" id="bar-text">
+                    Public Opinion
+                </div>
+                <div style="padding-left: 35%">
+                    <div class="progress progress-bar-vertical">
+                        <div id="bar" class="progress-bar progress-bar-striped bg-success progress-bar-animated"
+                            role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"
+                            style="height: 350px">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+    <script type="text/javascript" src="js/main.js"></script>
+</body>
+
+</html>
