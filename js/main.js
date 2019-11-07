@@ -76,6 +76,12 @@ function updatebuttons() {
     $("#choicetext4").data("id", options[3].newid);
 }
 
+function showresponse() {
+    $("#response-text").toggleClass("display");
+    $("#response-btn").toggleClass("display");
+    $("#story-text").toggleClass("nodisplay");
+}
+
 //gameover
 function gameover(type) {
     //display gameover screen in reponse text. make it creative please.
@@ -89,13 +95,14 @@ function gameover(type) {
     $("#dia-2").css("display", "none");
     $("#dia-3").css("display", "none");
     $("#dia-4").css("display", "none");
-    $("#response-text").css("display", "none");
+    $("#response").css("display", "none");
     $("#story-text").css("display", "none");
 
     //display gameover
     $("#gameover-text").addClass("display");
     //display reset button
     $("#gameover-btn").addClass("display");
+    $("#story-title").text("Game Over");
 }
 
 
@@ -121,8 +128,7 @@ $(document).ready(function () {
         //hide all buttons
         buttons();
         //show response box
-        $("#response-text").toggleClass("display");
-        $("#story-text").toggleClass("nodisplay");
+        showresponse();
     });
 
     //for a real choice making system.
@@ -153,8 +159,7 @@ $(document).ready(function () {
         //hide all buttons
         buttons();
         //show response box
-        $("#response-text").toggleClass("display");
-        $("#story-text").toggleClass("nodisplay");
+        showresponse();
     });
 
 
@@ -171,8 +176,7 @@ $(document).ready(function () {
         //hide all buttons
         buttons();
         //show response box
-        $("#response-text").toggleClass("display");
-        $("#story-text").toggleClass("nodisplay");
+        showresponse();
     });
 
 
@@ -189,14 +193,14 @@ $(document).ready(function () {
         //hide all buttons
         buttons();
         //show response box
-        $("#response-text").toggleClass("display");
-        $("#story-text").toggleClass("nodisplay");
+        showresponse();
     });
 
     //response area listener
-    $("#response-text").click(function () {
+    $("#response").click(function () {
         //hide reponse box
         $("#response-text").toggleClass("display");
+        $("#response-btn").toggleClass("display");
         $("#story-text").toggleClass("nodisplay");
         //update buttons with function above
         nextset();

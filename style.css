@@ -63,6 +63,12 @@ hr {
     display: none;
 }
 
+#response-btn {
+    font-family: 'Merienda One', cursive;
+    font-size: 1.5rem;
+    display: none;
+}
+
 #gameover-text {
     font-family: 'Merienda One', cursive;
     font-size: 1.5rem;
