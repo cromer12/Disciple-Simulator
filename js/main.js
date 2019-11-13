@@ -1,4 +1,5 @@
 let options = diaoptions;
+let q = 0;
 
 //add pixels and changes bar color depeneding on the level of public opinion
 function addpx(px, toadd) {
@@ -47,10 +48,8 @@ function addpx(px, toadd) {
 
 //drop index 0-3 from array
 function nextset() {
-    for (var i = 0; i < 4; i++) {
-        options.shift();
-    }
     updatebuttons();
+    nextquestion();
 }
 
 //hides and shows buttons
@@ -64,16 +63,16 @@ function buttons() {
 //updates buttons with the new array
 function updatebuttons() {
     //set text
-    $("#choicetext1").text(options[0].text);
-    $("#choicetext2").text(options[1].text);
-    $("#choicetext3").text(options[2].text);
-    $("#choicetext4").text(options[3].text);
+    $("#choicetext1").text(options[q].dialog[0].text);
+    $("#choicetext2").text(options[q].dialog[1].text);
+    $("#choicetext3").text(options[q].dialog[2].text);
+    $("#choicetext4").text(options[q].dialog[3].text);
 
     //set ids
-    $("#choicetext1").data("id", options[0].newid);
-    $("#choicetext2").data("id", options[1].newid);
-    $("#choicetext3").data("id", options[2].newid);
-    $("#choicetext4").data("id", options[3].newid);
+    $("#choicetext1").data("id", options[q].dialog[0].newid);
+    $("#choicetext2").data("id", options[q].dialog[1].newid);
+    $("#choicetext3").data("id", options[q].dialog[2].newid);
+    $("#choicetext4").data("id", options[q].dialog[3].newid);
 }
 
 function showresponse() {
@@ -105,9 +104,19 @@ function gameover(type) {
     $("#story-title").text("Game Over");
 }
 
+function nextquestion() {
+    $("#story-title").text(options[q].question.title);
+    $("#story-text").text(options[q].question.text);
+}
+
+function startup() {
+    updatebuttons();
+    nextquestion();
+}
+
 
 $(document).ready(function () {
-    updatebuttons();
+    startup();
 
     //start button listener
     $("#start-btn").click(function () {
@@ -118,7 +127,7 @@ $(document).ready(function () {
     //choice 1 listener
     $("#dia-1").click(function () {
         //get choice
-        choice = options[$("#dia-1").data('id')];
+        choice = options[q].dialog[$("#dia-1").data('id')];
         //change bar height
         $("#bar").css({
             "height": addpx($("#bar").css('height'), choice.change)
@@ -149,7 +158,7 @@ $(document).ready(function () {
     //choice 2 listener
     $("#dia-2").click(function () {
         //get choice
-        choice = options[$("#dia-2").data('id')];
+        choice = options[q].dialog[$("#dia-2").data('id')];
         //change bar height
         $("#bar").css({
             "height": addpx($("#bar").css('height'), choice.change)
@@ -166,7 +175,7 @@ $(document).ready(function () {
     //choice 3 listener
     $("#dia-3").click(function () {
         //get choice
-        choice = options[$("#dia-3").data('id')];
+        choice = options[q].dialog[$("#dia-3").data('id')];
         //change bar height
         $("#bar").css({
             "height": addpx($("#bar").css('height'), choice.change)
@@ -183,7 +192,7 @@ $(document).ready(function () {
     //choice 4 listener
     $("#dia-4").click(function () {
         //get choice
-        choice = options[$("#dia-4").data('id')];
+        choice = options[q].dialog[$("#dia-4").data('id')];
         //change bar height
         $("#bar").css({
             "height": addpx($("#bar").css('height'), choice.change)
@@ -206,6 +215,8 @@ $(document).ready(function () {
         nextset();
         //show buttons with updated text
         buttons();
+        //increment the set
+        q++;
     });
 
 
