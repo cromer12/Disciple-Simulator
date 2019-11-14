@@ -113,29 +113,29 @@ let diaoptions = [{
     ]
 }, {
     question: {
-        title: "By The Water",
-        text: "You see a large crowd gathing by the Jordan. In the water is a man wearing camel's skin and he is about to submerge a Jew."
+        title: "Lost and Found",
+        text: "You wake in the morning to find that most of people have left. You also notice Jesus and his followers are misssing. Saddened by this discovery you head back to town and spend the next few weeks laboring in a vineyard. Coming to collect your pay, you here a laborer mention that one of Jesus's followers is in town preaching. You go to town, hoping to find Jesus and instead hear a man named Peter preaching."
     },
 
     dialog: [{
-            text: "Wade by the river",
-            change: -10,
-            response: "You see a man in the water 0"
+            text: "Wait for Peter to finish and follow close by him",
+            change: 5,
+            response: ""
         },
         {
-            text: "Wade by the river 1",
-            change: 20,
-            response: "You see a man in the water 1"
+            text: "Introduce yourself to him",
+            change: 10,
+            response: ""
         },
         {
-            text: "Wade by the river 2",
-            change: 30,
-            response: "You see a man in the water 2"
+            text: "Try to blend into the crowd and keep your distance",
+            change: -3,
+            response: ""
         },
         {
-            text: "Wade by the river 3",
-            change: 40,
-            response: "You see a man in the water 3"
+            text: "Speak against Peter's teachings",
+            change: -20,
+            response: ""
         }
     ]
 }, {
