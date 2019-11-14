@@ -140,21 +140,6 @@ $(document).ready(function () {
         showresponse();
     });
 
-    //for a real choice making system.
-    /*$("#dia-1").click(function () {
-        let choice = $("#dia-1").data('id');
-        choice = diaoptions[choice];
-        $("#dia-1").attr('data-id', choice.newid);
-        let newchoice = diaoptions[choice.newid]
-        $("#choicetext1").text(newchoice.text);
-        $("#bar").css({
-            "height": addpx(newchoice.change)
-        })
-
-        //add response text box over the story text box for click
-
-    });*/
-
     //choice 2 listener
     $("#dia-2").click(function () {
         //get choice
@@ -211,12 +196,12 @@ $(document).ready(function () {
         $("#response-text").toggleClass("display");
         $("#response-btn").toggleClass("display");
         $("#story-text").toggleClass("nodisplay");
+        //increment the set
+        q++;
         //update buttons with function above
         nextset();
         //show buttons with updated text
         buttons();
-        //increment the set
-        q++;
     });
 
 

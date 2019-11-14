@@ -7,26 +7,26 @@ let diaoptions = [{
 
     dialog: [{
             //text to display on the button
-            text: "Wade by the river",
+            text: "Sit on the ground and watch from afar",
             //set change values negative to reduce meter
-            change: 10,
+            change: -2,
             //reponse to go in story box
-            response: "You see a man in the water 0"
+            response: ""
         },
         {
-            text: "Wade by the river 1",
-            change: 20,
-            response: "You see a man in the water 1"
+            text: "Leave the crowd",
+            change: -5,
+            response: ""
         },
         {
-            text: "Wade by the river 2",
-            change: 30,
-            response: "You see a man in the water 2"
+            text: "Approach the river's edge",
+            change: 2,
+            response: ""
         },
         {
-            text: "Wade by the river 3",
-            change: 40,
-            response: "You see a man in the water 3"
+            text: "Wade into the river",
+            change: 10,
+            response: ""
         }
     ]
 
