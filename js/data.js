@@ -1,7 +1,7 @@
 let diaoptions = [{
 
     question: {
-        title: "By The Water",
+        title: "By Water",
         text: "You see a large crowd gathing by the Jordan. In the water is a man wearing camel's skin and he is about to submerge a Jew. What do you do?"
     },
 
@@ -32,8 +32,8 @@ let diaoptions = [{
 
 }, {
     question: {
-        title: "House at Capernaum",
-        text: 'While you are walking down the streets of Capernaum, you notice three men carrying a paralyzed man on a strecher. "Move out of the way!," they shout as they pass you. You notice the man carrying a side by himself is struggling to hold up the weight. What do you do?'
+        title: "Capernaum's House",
+        text: 'While you are walking down the streets of Capernaum, you notice three men carrying a paralyzed man on a strecher. "Move out of the way!" they shout as they pass you. You notice the man carrying a side by himself is struggling to hold up the weight. What do you do?'
     },
 
     dialog: [{
@@ -59,7 +59,7 @@ let diaoptions = [{
     ]
 }, {
     question: {
-        title: "Sabbath Day Miracle",
+        title: "Sabbath Miracle",
         text: '"Stand up in front of everyone," he states. It is the same man you have seen before. He looks similar to other Jewish man to you, but there is something unshakable about his presence. Beside him stands another man with a disformed hand. The familiar man contiues, “Which is lawful on the Sabbath: to do good or to do evil, to save life or to kill?”'
     },
 
@@ -71,7 +71,7 @@ let diaoptions = [{
         {
             text: 'Shout, "it is not lawful to save a life on the Sabbath!"',
             change: -15,
-            response: "To your surpise, the man's hand is healed! Intrigued by this man, you discover his name is Jesus and decide to follow him. Someone needs to keep tabs on this heretic after all."
+            response: "To your surpise, the man's hand is healed! Intrigued by this man, you discover his name is Jesus and decide to follow him. Someone needs to keep tabs on this man."
         },
         {
             text: "Remain silent",
@@ -140,251 +140,116 @@ let diaoptions = [{
     ]
 }, {
     question: {
-        title: "By The Water",
-        text: "You see a large crowd gathing by the Jordan. In the water is a man wearing camel's skin and he is about to submerge a Jew."
+        title: "Baskets Full",
+        text: 'Upon arriving, you see Peter climb into a boat with Jesus. The large crowd in front of you follows the direction the boat is heading and you choose to follow along yourself. You stop with the crowd as the sun is setting. You think to yourself, "I am glad I bought this fish and bread in town. I will not be hungry tonight." Jesus and his disciples have exited the boat and you notice Peter walking your way. "Have any food?" asks the familiar voice.'
     },
 
     dialog: [{
-            text: "Wade by the river",
-            change: -10,
-            response: "You see a man in the water 0"
+            text: "Offer your last loaf of bread",
+            change: 5,
+            response: ""
         },
         {
-            text: "Wade by the river 1",
-            change: 20,
+            text: "Give him a fish you bought from town a few hours ago",
+            change: 10,
+            response: ""
+        },
+        {
+            text: "Tell him you have nothing to spare",
+            change: 0,
+            response: ""
+        },
+        {
+            text: 'Lie by saying, "I have no food!"',
+            change: -10,
+            response: ""
+        }
+    ]
+}, {
+    question: {
+        title: "Unclean Hands",
+        text: 'You approach Jesus and see a circle of Pharisees around him. One of them speaks in an accusatory tone "Why don’t your disciples live according to the tradition of the elders instead of eating their food with defiled hands?" You are caught off guard by the question. Jesus says "Isaiah was right when he prophesied about you hypocrites..."'
+    },
+
+    dialog: [{
+            text: "You stand in anticipation and awe as this moment unfolds",
+            change: 0,
+            response: ""
+        },
+        {
+            text: "Side with the disciples",
+            change: 10,
+            response: ""
+        },
+        {
+            text: "Side with the Pharisees",
+            change: -10,
+            response: ""
+        },
+        {
+            text: "Attempt to leave",
+            change: -5,
+            response: ""
+        }
+    ]
+}, {
+    question: {
+        title: "Divorce Law",
+        text: 'You travel the countyside with Jesus\'s following. You witness a blind man healed, another meal for thousands appears from no where, and a demon is casted out from a boy. Finally after crossing the Jordan, a group of pharisees approaches Jesus again. You catch words of divorce and decide to move closer to the converstaion. "Moses permitted a man to write a certificate of divorce and send her away," said the Pharisee who started the confrontation. Jesus pauses with a slight grimace on his face. "It was because your hearts were hard that Moses wrote you this law,” he said in a low tone.'
+    },
+
+    dialog: [{
+            text: "Look appauled at the Pharisees upon hearing Jesus's words",
+            change: 5,
+            response: ""
+        },
+        {
+            text: "Defend the ideals of the Pharisees to those around you",
+            change: -10,
+            response: ""
+        },
+        {
+            text: "Pause to contemplate Jesus's teachings",
+            change: 2,
+            response: ""
+        },
+        {
+            text: "Acknowledge the person next to you",
+            change: -5,
+            response: ""
+        }
+    ]
+}, {
+    question: {
+        title: "Tax Collection",
+        text: 'You head to Jerusalem for the Passover celebration. As you are walking through the market square, you see a large crowd standing in a circle. You approach to see what has caused such a great gathering. There is are some Pharisees and Herodians talking to Jesus. "Teacher, we know that you are a man of integrity. You aren’t swayed by others, because you pay no attention to who they are; but you teach the way of God in accordance with the truth. Is it right to pay the imperial tax to Caesar or not? Should we pay or shouldn’t we?"'
+    },
+
+    dialog: [{
+            text: "Reach your hand into your coin purse",
+            change: 5,
+            response: ""
+        },
+        {
+            text: 'Shout, "Why trap an innocent man!?"',
+            change: 10,
             response: "You see a man in the water 1"
         },
         {
-            text: "Wade by the river 2",
-            change: 30,
+            text: 'Leave shouting, "Guards!"',
+            change: -10,
             response: "You see a man in the water 2"
         },
         {
-            text: "Wade by the river 3",
-            change: 40,
+            text: 'Push your way through the crowds for a better look',
+            change: 15,
             response: "You see a man in the water 3"
         }
     ]
 }, {
     question: {
-        title: "By The Water",
-        text: "You see a large crowd gathing by the Jordan. In the water is a man wearing camel's skin and he is about to submerge a Jew."
-    },
-
-    dialog: [{
-            text: "Wade by the river",
-            change: -10,
-            response: "You see a man in the water 0"
-        },
-        {
-            text: "Wade by the river 1",
-            change: 20,
-            response: "You see a man in the water 1"
-        },
-        {
-            text: "Wade by the river 2",
-            change: 30,
-            response: "You see a man in the water 2"
-        },
-        {
-            text: "Wade by the river 3",
-            change: 40,
-            response: "You see a man in the water 3"
-        }
-    ]
-}, {
-    question: {
-        title: "By The Water",
-        text: "You see a large crowd gathing by the Jordan. In the water is a man wearing camel's skin and he is about to submerge a Jew."
-    },
-
-    dialog: [{
-            text: "Wade by the river",
-            change: -10,
-            response: "You see a man in the water 0"
-        },
-        {
-            text: "Wade by the river 1",
-            change: 20,
-            response: "You see a man in the water 1"
-        },
-        {
-            text: "Wade by the river 2",
-            change: 30,
-            response: "You see a man in the water 2"
-        },
-        {
-            text: "Wade by the river 3",
-            change: 40,
-            response: "You see a man in the water 3"
-        }
-    ]
-}, {
-    question: {
-        title: "By The Water",
-        text: "You see a large crowd gathing by the Jordan. In the water is a man wearing camel's skin and he is about to submerge a Jew."
-    },
-
-    dialog: [{
-            text: "Wade by the river",
-            change: -10,
-            response: "You see a man in the water 0"
-        },
-        {
-            text: "Wade by the river 1",
-            change: 20,
-            response: "You see a man in the water 1"
-        },
-        {
-            text: "Wade by the river 2",
-            change: 30,
-            response: "You see a man in the water 2"
-        },
-        {
-            text: "Wade by the river 3",
-            change: 40,
-            response: "You see a man in the water 3"
-        }
-    ]
-}, {
-    question: {
-        title: "By The Water",
-        text: "You see a large crowd gathing by the Jordan. In the water is a man wearing camel's skin and he is about to submerge a Jew."
-    },
-
-    dialog: [{
-            text: "Wade by the river",
-            change: -10,
-            response: "You see a man in the water 0"
-        },
-        {
-            text: "Wade by the river 1",
-            change: 20,
-            response: "You see a man in the water 1"
-        },
-        {
-            text: "Wade by the river 2",
-            change: 30,
-            response: "You see a man in the water 2"
-        },
-        {
-            text: "Wade by the river 3",
-            change: 40,
-            response: "You see a man in the water 3"
-        }
-    ]
-}, {
-    question: {
-        title: "By The Water",
-        text: "You see a large crowd gathing by the Jordan. In the water is a man wearing camel's skin and he is about to submerge a Jew."
-    },
-
-    dialog: [{
-            text: "Wade by the river",
-            change: -10,
-            response: "You see a man in the water 0"
-        },
-        {
-            text: "Wade by the river 1",
-            change: 20,
-            response: "You see a man in the water 1"
-        },
-        {
-            text: "Wade by the river 2",
-            change: 30,
-            response: "You see a man in the water 2"
-        },
-        {
-            text: "Wade by the river 3",
-            change: 40,
-            response: "You see a man in the water 3"
-        }
-    ]
-}, {
-    question: {
-        title: "By The Water",
-        text: "You see a large crowd gathing by the Jordan. In the water is a man wearing camel's skin and he is about to submerge a Jew."
-    },
-
-    dialog: [{
-            text: "Wade by the river",
-            change: -10,
-            response: "You see a man in the water 0"
-        },
-        {
-            text: "Wade by the river 1",
-            change: 20,
-            response: "You see a man in the water 1"
-        },
-        {
-            text: "Wade by the river 2",
-            change: 30,
-            response: "You see a man in the water 2"
-        },
-        {
-            text: "Wade by the river 3",
-            change: 40,
-            response: "You see a man in the water 3"
-        }
-    ]
-}, {
-    question: {
-        title: "By The Water",
-        text: "You see a large crowd gathing by the Jordan. In the water is a man wearing camel's skin and he is about to submerge a Jew."
-    },
-
-    dialog: [{
-            text: "Wade by the river",
-            change: -10,
-            response: "You see a man in the water 0"
-        },
-        {
-            text: "Wade by the river 1",
-            change: 20,
-            response: "You see a man in the water 1"
-        },
-        {
-            text: "Wade by the river 2",
-            change: 30,
-            response: "You see a man in the water 2"
-        },
-        {
-            text: "Wade by the river 3",
-            change: 40,
-            response: "You see a man in the water 3"
-        }
-    ]
-}, {
-    question: {
-        title: "By The Water",
-        text: "You see a large crowd gathing by the Jordan. In the water is a man wearing camel's skin and he is about to submerge a Jew."
-    },
-
-    dialog: [{
-            text: "Wade by the river",
-            change: -10,
-            response: "You see a man in the water 0"
-        },
-        {
-            text: "Wade by the river 1",
-            change: 20,
-            response: "You see a man in the water 1"
-        },
-        {
-            text: "Wade by the river 2",
-            change: 30,
-            response: "You see a man in the water 2"
-        },
-        {
-            text: "Wade by the river 3",
-            change: 40,
-            response: "You see a man in the water 3"
-        }
-    ]
-}, {
-    question: {
-        title: "By The Water",
-        text: "You see a large crowd gathing by the Jordan. In the water is a man wearing camel's skin and he is about to submerge a Jew."
+        title: "Pilate's Orders",
+        text: ""
     },
 
     dialog: [{

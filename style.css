@@ -1,12 +1,22 @@
+* {
+    font-family: 'Merienda One', cursive;
+    letter-spacing: -1px;
+}
+
 html,
 body {
-    margin-top: 10px;
     height: 100%;
     background-image: url("img/paper.jpg");
+    background-size: cover;
 }
 
 hr {
     border-top: 3px solid rgba(0, 0, 0, 0.1) !important;
+}
+
+[id*="container"] {
+    padding-top: 15px;
+    padding-bottom: 15px;
 }
 
 /* Title Container */
@@ -126,4 +136,16 @@ hr {
 
 .nodisplay {
     display: none !important;
+}
+
+marquee {
+    height: 100%;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+#overlay {
+    background-color: black;
+    opacity: 0;
+    height: 100%;
 }

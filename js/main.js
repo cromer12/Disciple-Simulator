@@ -81,6 +81,28 @@ function showresponse() {
     $("#story-text").toggleClass("nodisplay");
 }
 
+//win
+function win() {
+    gameover(2);
+    let txt = 'aliquet nec ullamcorper sit amet risus nullam eget felis eget nunc lobortis mattis aliquam faucibus purus in massa tempor nec feugiat nisl pretium fusce id velit ut tortor pretium viverra suspendisse potenti nullam ac tortor vitae purus faucibus ornare suspendisse sed nisi lacus sed viverra tellus in hac habitasse platea dictumst vestibulum rhoncus est pellentesque elit ullamcorper dignissim cras tincidunt lobortis feugiat vivamus at augue eget arcu dictum varius duis at consectetur lorem donec massa sapien faucibus et molestie ac feugiat sed lectus vestibulum mattis ullamcorper velit sed ullamcorper morbi tincidunt ornare massa eget egestas purus viverra accumsan in nisl';
+    let mark = '<marquee behavior="scroll" direction="up" scrollamount="3" loop="1">' + txt + '</marquee>';
+    $("#story-container").html(mark);
+    $("#story-container").css("padding-top", "0px");
+    $("#story-container").css("padding-bottom", "0px");
+
+    //edit the second paramater to prolong screen time of scrolling text
+    setTimeout(function () {
+        $('body').html('<div id="overlay"></div>')
+        //do what you need here
+        $('#overlay').animate({
+            opacity: 1,
+        }, 5000, function () {
+            // Animation complete.
+        });
+    }, 30000);
+
+}
+
 //gameover
 function gameover(type) {
     //display gameover screen in reponse text. make it creative please.
@@ -88,6 +110,9 @@ function gameover(type) {
     //Your huberious ways have made you an enemy of the Romen government. Because of that you are captured and imprisoned
     //if is a high gameover 1
     //your presence with Jesus becomes noticed and you are also seen as a threat to the Jewish ways leading being unjustily imprisoned
+
+    //if is a win gameover 2
+    //just hide everything
 
     //hide all elements
     $("#dia-1").css("display", "none");
@@ -198,10 +223,15 @@ $(document).ready(function () {
         $("#story-text").toggleClass("nodisplay");
         //increment the set
         q++;
-        //update buttons with function above
-        nextset();
-        //show buttons with updated text
-        buttons();
+        //win check
+        if (q == options.length) {
+            win();
+        } else {
+            //update buttons with function above
+            nextset();
+            //show buttons with updated text
+            buttons();
+        }
     });
 
 
