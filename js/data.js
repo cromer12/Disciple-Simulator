@@ -39,22 +39,22 @@ let diaoptions = [{
     dialog: [{
             text: "Follow the three men and see where they are in such a hurry to",
             change: 2,
-            response: ""
+            response: 'You run to catch up with the three men. As they turn the corner, you hear the low rumble of a crowd. You turn the corner and see a house with people littered everywhere. There are people lining the steps, peeking into the windows, and busting through the entryways. You notice that the three men you saw earlier are on the roof now. You hear a loud "crack," they remove the section of the roof and lower the man down. A moment passes and a man holding the same stretcher comes brusting from the front door! He is now walking and shouting that a man has healed him! The stranger you saw at the river earlier enters your mind. You wonder for a moment, and seeing no way into the house, decide to leave.'
         },
         {
             text: "Step out of the way and contiue on your way",
             change: -5,
-            response: ""
+            response: "You sidestep the trio at the last second. As they pass you, you get a look at the face of the man on the stretcher. His face is hallow and he appears to be in pain. You grimace at the sight of this poor soul. After they have passed, you contiue on your way down the streets of Capernaum toward the synagogue."
         },
         {
             text: "Stick out your foot",
-            change: -10,
-            response: "trip and fall"
+            change: -15,
+            response: 'You move out the way and lazily put your foot out. The man at the back, carrying an end by himself notices your foot at the last moment. He narrowly dodges it, but in one smooth action, knees the inside of our theigh. Pain rockets from the impact and you fall down. As the group turns the corner, you hear the man in the back sarcastically shouts, "Do not worry! We will be back to get you shortly!" You cannot help but to notice an older woman selling fruit laughing quietly to herself at the justice she witnessed. Embarrassed, you get back up to your feet and head down the street towards the synagogue.'
         },
         {
             text: 'Run after them and while shouting, "Allow me to help you!"',
             change: 10,
-            response: ""
+            response: 'You turn and sprint towards the group, "Let me help you with this end!" You catch up and grab a corner of the stretcher. "Not a moment too soon," remarks the man beside you, "My arms were about to give out." You contiue with the group until you reach a house overflowing with people. "How are we going to get him inside?" asks one of the men up front. "There is not anyone on the roof! Quickly now!" states the man beside you. You head to the roof, stretcher in tow, and begin peeling the roof off of the building. Within a few moments, you see the man who had been in the river yesterday looking up at you. Stunned, you fall backwards away from the hole as the trio lowers the stretcher down into the hole. A moment passes and you hear a shout, "I am healed!" Walking out of front door is the man you just brought to the roof on a stretcher. You look down the hole and see that the man from the river has vanished before you could speak with him. Frustrated, you get down from the roof and head towards the synagogue.'
         }
     ]
 }, {
