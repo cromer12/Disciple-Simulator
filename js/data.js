@@ -114,28 +114,28 @@ let diaoptions = [{
 }, {
     question: {
         title: "Lost and Found",
-        text: "You wake in the morning to find that most of people have left. You also notice Jesus and his followers are gone as well. Saddened by this discovery you head back to town and spend the next few weeks laboring in a vineyard. Coming to collect your pay, you here a laborer mention that one of Jesus's followers is in town preaching. You go to town, hoping to find Jesus and instead hear a man named Peter preaching."
+        text: "You wake in the morning to find that most of people have left. You also notice Jesus and his followers are gone as well. Saddened by this discovery you head back to town and spend the next few weeks laboring in a vineyard. Coming to collect your pay, you here a laborer mention that someone in town mentioned Jesus. You go to town, hoping to find Jesus and instead find a man named Peter preaching."
     },
 
     dialog: [{
-            text: "Wait for Peter to finish and follow close by him",
+            text: "Wait for Peter to finish and follow close to him",
             change: 5,
-            response: ""
+            response: "You hear Peter preach of forgiveness of sin and the coming messiah. You discover that Peter use to be a fisherman before Jesus called him. You blend into the large crowd that is following Peter out of town."
         },
         {
             text: "Introduce yourself to him",
             change: 10,
-            response: ""
+            response: '"Hello Peter!" you state as you walk up to him. He seems a little uncomfortable. He quick mutters "Hello!" and turns to walk away from you. You could tell he was not try to offend you. you assume you may have put him on edge with your forwardness. You follow Peter out of town with a large crowd of followers right behind you.'
         },
         {
             text: "Try to blend into the crowd and keep your distance",
             change: -3,
-            response: ""
+            response: "You make your way up to the back of the crowd. You pull your cloak over your head and get close enough to Peter to hear him. As your making your way through the crowd, you make eye contact with a guard. He makes a suspicious squint and you duck and turn the otherway. Luckily, the guard does not think much more of you. You keep your position in the crowd and follow Peter out of town."
         },
         {
             text: "Speak against Peter's teachings",
             change: -20,
-            response: ""
+            response: "You push your way to the front of the crowd and begin to call Peter a heretic! Before you get two sentences into your monologue, a guard tackles you to the ground. You are escorted to the town gate and tossed out. After a few hours, you see Peter followed by a large crowd come out of the gate. You decide you do not have much better to do and blend into the crowd."
         }
     ]
 }, {
