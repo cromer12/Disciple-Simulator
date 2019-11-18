@@ -26,12 +26,7 @@ hr {
 
 
 #title-text {
-    font-family: 'Merienda One', cursive;
     font-size: 4rem;
-}
-
-#start-btn {
-    font-family: 'Merienda One', cursive;
 }
 
 #title-wrapper {
@@ -46,12 +41,10 @@ hr {
 }
 
 #story-title {
-    font-family: 'Merienda One', cursive;
     font-size: 4rem;
 }
 
 #story-text {
-    font-family: 'Merienda One', cursive;
     font-size: 1.5rem;
 }
 
@@ -63,31 +56,26 @@ hr {
 }
 
 #bar-text {
-    font-family: 'Merienda One', cursive;
     font-size: 1.5rem;
 }
 
 
 #response-text {
-    font-family: 'Merienda One', cursive;
     font-size: 1.5rem;
     display: none;
 }
 
 #response-btn {
-    font-family: 'Merienda One', cursive;
     font-size: 1.5rem;
     display: none;
 }
 
 #gameover-text {
-    font-family: 'Merienda One', cursive;
     font-size: 1.5rem;
     display: none;
 }
 
 #gameover-btn {
-    font-family: 'Merienda One', cursive;
     font-size: 1.5rem;
     display: none;
 }
@@ -95,7 +83,6 @@ hr {
 
 
 .dia-text {
-    font-family: 'Merienda One', cursive;
     font-size: 1.5rem;
 }
 
