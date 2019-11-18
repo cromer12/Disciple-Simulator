@@ -11,22 +11,22 @@ let diaoptions = [{
             //set change values negative to reduce meter
             change: -2,
             //reponse to go in story box
-            response: ""
+            response: 'You see one man dunk the other into the water. As the dunked is raised up, you see the sky split open and a dove desends down towards the one in the water. You feel the ground rumble as the words, "You are my Son, whom I love; with you I am well pleased," echo throughout all the land. You decide to follow this man to uncover the mystery of this experience.'
         },
         {
             text: "Leave the crowd",
             change: -5,
-            response: ""
+            response: "You shrug at the sight of these men standing in the water. You turn your back and contiue on your way to Capernaum. On the way, you sense a slight shake coming from the ground below followed by a crack of thunder. You look around, caught off guard by these strange occurances. Seeing nothing around you that indicates danger, you relax and contiue on your way"
         },
         {
             text: "Approach the river's edge",
             change: 2,
-            response: ""
+            response: 'You see the features of the man\'s face clearly. He looks like an average man, but his eyes are bright with life. Just before he is dipped into the water, he catches your gaze. You are stunned for a moment as he is laid under the water. Suddenly, the sky rips open and a booming voice declares, "You are my Son, whom I love; with you I am well pleased." You have a hard time making out the message as the words echo throughout the valley. You look up to see a dove descending gently towards the man. After this experience, you decide to follow this man.'
         },
         {
             text: "Wade into the river",
             change: 10,
-            response: ""
+            response: "You feel drown to the pair. Before you realize it, you are waist deep in the water approaching the two. The man was dunked by the other and suddenly, it was like lightning struck you. You awake on the edge of the river; You are alone, and the sun has set. You legs are tingling and the only thing your remember is the face of the man who was dipped. After contemplating your experience a bit more, you look around to see you are on the shore of Capernaum! You must have floated quite a distance before waking up. It seems someone is looking out for you. You quickly rise and head toward the city lights, feet still tingling a little with each step."
         }
     ]
 
@@ -249,27 +249,27 @@ let diaoptions = [{
 }, {
     question: {
         title: "Pilate's Orders",
-        text: ""
+        text: '"Give us Barabbas!" you hear being shouted from the town square. Your curiosity compels you to go towards the rioting. You arrive to see Pilate standing with beaten Jesus on one side and a grizzly looking man on the other. "That must be Barabbas," you think to yourself. Pilate says, "What shall I do, then, with the one you call the king of the Jews?" then the crowd errupts with, "crucify him!"'
     },
 
     dialog: [{
-            text: "Wade by the river",
+            text: 'Shout, "Release Jesus! He is blameless!"',
+            change: 5,
+            response: ""
+        },
+        {
+            text: 'Follow the crowd by shouting, "crucify him!"',
+            change: -5,
+            response: ""
+        },
+        {
+            text: "Attempt to push your to the front of the crowd",
             change: -10,
-            response: "You see a man in the water 0"
-        },
-        {
-            text: "Wade by the river 1",
-            change: 20,
-            response: "You see a man in the water 1"
-        },
-        {
-            text: "Wade by the river 2",
-            change: 30,
             response: "You see a man in the water 2"
         },
         {
-            text: "Wade by the river 3",
-            change: 40,
+            text: "Stand knowing the situation is unchangeable",
+            change: 0,
             response: "You see a man in the water 3"
         }
     ]
