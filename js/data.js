@@ -114,7 +114,7 @@ let diaoptions = [{
 }, {
     question: {
         title: "Lost and Found",
-        text: "You wake in the morning to find that most of people have left. You also notice Jesus and his followers are gone as well. Saddened by this discovery you head back to town and spend the next few weeks laboring in a vineyard. Coming to collect your pay, you here a laborer mention that someone in town mentioned Jesus. You go to town, hoping to find Jesus and instead find a man named Peter preaching."
+        text: "You wake in the morning to find that most of people have left. You also notice Jesus and his followers are gone as well. Saddened by this discovery you head back to town and spend the next few weeks laboring in a vineyard. Coming to collect your pay, you here a laborer mention that someone in town mentioned Jesus. You go to town, purchase some bread and a fish, and search hoping to find Jesus and instead find a man named Peter preaching."
     },
 
     dialog: [{
@@ -141,28 +141,28 @@ let diaoptions = [{
 }, {
     question: {
         title: "Baskets Full",
-        text: 'Upon arriving, you see Peter climb into a boat with Jesus. The large crowd in front of you follows the direction the boat is heading and you choose to follow along yourself. You stop with the crowd as the sun is setting. You think to yourself, "I am glad I bought this fish and bread in town. I will not be hungry tonight." Jesus and his disciples have exited the boat and you notice Peter walking your way. "Have any food?" asks the familiar voice.'
+        text: 'Upon arriving, you see Peter climb into a boat with Jesus. The large crowd in front of you follows the direction the boat is heading and you choose to follow along yourself. You stop with the crowd as the sun is setting. You think to yourself, "I am glad I bought this fish and bread back in town. I will not be hungry tonight." Jesus and his disciples have exited the boat and you notice Peter walking your way. "Have any food?" he asks.'
     },
 
     dialog: [{
             text: "Offer your last loaf of bread",
             change: 5,
-            response: ""
+            response: '"Here, take this," you say handing Peter a loaf of bread. "I know it is not much, but its all the bread I have," you state with a smile. Peter takes the bread and smiles softly at you. fortunately for you, he does not recongize you from the town. He takes the loaf, gives it to Jesus, bread is broken, and basket upon basket is filled with the bread Jesus is breaking. You a filled with joy knowing your bread had a part to play in this miracle.'
         },
         {
             text: "Give him a fish you bought from town a few hours ago",
             change: 10,
-            response: ""
+            response: '"I have just the thing," you say handing Peter a fish. "I bought it only an hour ago, it is still fresh!" you state with enthusiasm. Peter gladly takes the fish from you and quickly returns to Jesus. He takes the fish, gives it to Jesus, bread is broken, and basket upon basket is filled with food as Jesus is blessing it. You a filled with joy knowing your bread had a part to play in this miracle.'
         },
         {
             text: "Tell him you have nothing to spare",
             change: 0,
-            response: ""
+            response: 'He looks a little disheartened at your response. He can clearly see the loaf of bread hanging from your pocket. "I understand," says Peter, "after all, a few loafs will not feed this whole lot!" You chuckle a little feeling as if your wisdom was understood by Peter. You see Peter return to Jesus with a few loafs and a couple of fishes. Jesus gives thanks, breaks bread, and the disciples fill a basket... then two baskets... then three... before you know it, everyone has feasted and all are filled! You feel foolish for allowing your "wisdom" to come inbetween you and God.'
         },
         {
             text: 'Lie by saying, "I have no food!"',
             change: -10,
-            response: ""
+            response: 'He can clearly see the loaf of bread hanging from your pocket. "I understand it is a lot of ask, but please do not lie," Peter states frustratedly. You see Peter return to Jesus with a few loafs and a couple of fishes. After a short time, there is food for everyone. You desire for self preservation is foolish when God is involved in a situation. You guiltily eat wishing you could turn back time.'
         }
     ]
 }, {
