@@ -20,7 +20,7 @@ let diaoptions = [{
         },
         {
             text: "Approach the river's edge",
-            change: 2,
+            change: 5,
             response: 'You see the features of the man\'s face clearly. He looks like an average man, but his eyes are bright with life. Just before he is dipped into the water, he catches your gaze. You are stunned for a moment as he is laid under the water. Suddenly, the sky rips open and a booming voice declares, "You are my Son, whom I love; with you I am well pleased." You have a hard time making out the message as the words echo throughout the valley. You look up to see a dove descending gently towards the man. After this experience, you decide to follow this man.'
         },
         {
@@ -93,28 +93,28 @@ let diaoptions = [{
     dialog: [{
             text: "Mustard seed? Pah, who cares?",
             change: -10,
-            response: ""
+            response: "You wrapped your arms angrily around yourself, upset you missed the teaching. The woman seeing your posture offers to tell you the teaching. You agree to listen and after about an hour, she has finished reciting the parables. You thank her, she leaves, and you doze off beside the fire."
         },
         {
             text: 'Having no idea what she is talkig about you quip, "Of course, God can take any seed and make it bare fruit!!"',
             change: -15,
-            response: ""
+            response: "Her eyes narrow as she sees right through your lie. Irritated by your attempt at lying, she huffs as gets up and finds another group of people to chat with. Shortly after she leaves, the others around the fire leave as well leaving you alone. Saddened by the outcome of your actions, you find solace in a good night's rest."
         },
         {
             text: 'You pause for a second and respond, "I missed that part, can you tell me what he said?"',
             change: 5,
-            response: ""
+            response: "she smiles softly and tells you all she had heard during the teaching. After she has finished reciting the parables and words of Jesus, she leaves to return to her family. You look around and notice that everyone has left the fire you are at as well. Find peace in the of Jesus, you mediate on the meanings of the parables and doze off."
         },
         {
             text: "You avoid eye contact and look down.",
             change: 0,
-            response: ""
+            response: "She assumes you are either deaf or dumb... or maybe both. She breaks a piece of bread and places it in your lap with a smile. Then she quickly stands and goes to a different group. You cannot help but wonder what compelled her for such kindness... Maybe it was the words Jesus spoke that evening."
         }
     ]
 }, {
     question: {
         title: "Lost and Found",
-        text: "You wake in the morning to find that most of people have left. You also notice Jesus and his followers are misssing. Saddened by this discovery you head back to town and spend the next few weeks laboring in a vineyard. Coming to collect your pay, you here a laborer mention that one of Jesus's followers is in town preaching. You go to town, hoping to find Jesus and instead hear a man named Peter preaching."
+        text: "You wake in the morning to find that most of people have left. You also notice Jesus and his followers are gone as well. Saddened by this discovery you head back to town and spend the next few weeks laboring in a vineyard. Coming to collect your pay, you here a laborer mention that one of Jesus's followers is in town preaching. You go to town, hoping to find Jesus and instead hear a man named Peter preaching."
     },
 
     dialog: [{
