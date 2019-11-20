@@ -233,17 +233,17 @@ let diaoptions = [{
         {
             text: 'Shout, "Why trap an innocent man!?"',
             change: 10,
-            response: "You see a man in the water 1"
+            response: ""
         },
         {
             text: 'Leave shouting, "Guards!"',
             change: -10,
-            response: "You see a man in the water 2"
+            response: ""
         },
         {
             text: 'Push your way through the crowds for a better look',
             change: 15,
-            response: "You see a man in the water 3"
+            response: ""
         }
     ]
 }, {
@@ -255,22 +255,22 @@ let diaoptions = [{
     dialog: [{
             text: 'Shout, "Release Jesus! He is blameless!"',
             change: 5,
-            response: ""
+            response: "helpless"
         },
         {
             text: 'Follow the crowd by shouting, "crucify him!"',
             change: -5,
-            response: ""
+            response: "helpless"
         },
         {
             text: "Attempt to push your to the front of the crowd",
             change: -10,
-            response: "You see a man in the water 2"
+            response: "helpless"
         },
         {
             text: "Stand knowing the situation is unchangeable",
             change: 0,
-            response: "You see a man in the water 3"
+            response: "helpless"
         }
     ]
 }];
