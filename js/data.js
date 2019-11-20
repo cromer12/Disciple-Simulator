@@ -201,12 +201,12 @@ let diaoptions = [{
     dialog: [{
             text: "Look appauled at the Pharisees upon hearing Jesus's words",
             change: 5,
-            response: ""
+            response: 'The Pharisee\'s words struck you on the cheek as if someone hit you with a cheap shot. You know they\'re right, but being around Jesus has changed how you feel and think. You thought it was clear this law was created because of the hardness of man\'s heart. Jesus continues speaking and you are compelled to listen "But at the beginning of creation God \'made them male and female. For this reason a man will leave his father and mother and be united to his wife,  and the two will become one flesh.\' So they are no longer two, but one flesh. Therefore what God has joined together, let no one separate."'
         },
         {
             text: "Defend the ideals of the Pharisees to those around you",
             change: -10,
-            response: ""
+            response: '"The words of the Pharisees must be true! It is the way we have been taught our entire lives," you say to those around you. You begin to speak again, then Jesus speaks, " "But at the beginning of creation God \'made them male and female. For this reason a man will leave his father and mother and be united to his wife,  and the two will become one flesh.\' So they are no longer two, but one flesh. Therefore what God has joined together, let no one separate." Your heart is moved, both with anger and repentance. "Lord,"  you say in your spirit, "forgive me for my blindness. May these scales fall from my eye so I can see." You hang your head in despair at the revelation your heart received.'
         },
         {
             text: "Pause to contemplate Jesus's teachings",
