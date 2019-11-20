@@ -211,12 +211,12 @@ let diaoptions = [{
         {
             text: "Pause to contemplate Jesus's teachings",
             change: 2,
-            response: ""
+            response: 'You think to yourself, "Does God give man a law he cannot follow? Did Moses have to give man a way out? Maybe we were doomed to fail from the start." You stand looking at the ground as you think. You brought back by the voice of Jesus, "But at the beginning of creation God \'made them male and female. For this reason a man will leave his father and mother and be united to his wife,  and the two will become one flesh.\' So they are no longer two, but one flesh. Therefore what God has joined together, let no one separate." His words pierce your heart and you feel tears in your eyes. For the first time in your life, you begin to understand what having a "tender heart" truly means.'
         },
         {
             text: "Acknowledge the person next to you",
             change: -5,
-            response: ""
+            response: 'You shuffle your feet around uncomfortably. Those around you notice your discomfort and you accidentally make eye contact with the man beside you. "Hello," you say greeting him with your best efforts to hide how you feel. He smirks at you and does not offer any comfort in this tension situation. Jesus speaks, "But at the beginning of creation God \'made them male and female. For this reason a man will leave his father and mother and be united to his wife,  and the two will become one flesh.\' So they are no longer two, but one flesh. Therefore what God has joined together, let no one separate." You\'re stunned by Jesus\'s words. The man next to you punches you softly on the shoulder and says, "From the face your making, you look like you have had more than one divorce!" The comment hurts your feelings and you turn your back and sulk away from the crowd.'
         }
     ]
 }, {
