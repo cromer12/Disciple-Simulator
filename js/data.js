@@ -174,22 +174,22 @@ let diaoptions = [{
     dialog: [{
             text: "You stand in anticipation and awe as this moment unfolds",
             change: 0,
-            response: ""
+            response: 'As you become acutely aware of the tension in the air, your eyes dart back and forth from Jesus to the Pharisee. Jesus continues, "as it is written: \'These people honor me with their lips, but their hearts are far from me. They worship me in vain; their teachings are merely human rules.\' You have let go of the commands of God and are holding on to human traditions." For a moment, you could hear a quill drop from the next valley over. Jesus says, "You have a fine way of setting aside the commands of God in order to observe your own traditions! For Moses said, \‘Honor your father and mother,\’ and, ‘Anyone who curses their father or mother is to be put to death.\’ But you say that if anyone declares that what might have been used to help their father or mother is Corban (that is, devoted to God)— then you no longer let them do anything for their father or mother. Thus you nullify the word of God by your tradition that you have handed down. And you do many things like that." All stand speechless as Jesus begins teaching the crowd... '
         },
         {
             text: "Side with the disciples",
             change: 10,
-            response: ""
+            response: 'Feeling a protective urge surge through your body, you quickly move to stand beside Peter and brace yourself for the oncoming conflict. Then Jesus speaks, "as it is written: \'These people honor me with their lips, but their hearts are far from me. They worship me in vain; their teachings are merely human rules.\' You have let go of the commands of God and are holding on to human traditions." For a moment, you could hear a quill drop from the next valley over. Jesus says, "You have a fine way of setting aside the commands of God in order to observe your own traditions! For Moses said, \‘Honor your father and mother,\’ and, ‘Anyone who curses their father or mother is to be put to death.\’ But you say that if anyone declares that what might have been used to help their father or mother is Corban (that is, devoted to God)— then you no longer let them do anything for their father or mother. Thus you nullify the word of God by your tradition that you have handed down. And you do many things like that." All stand speechless as Jesus begins teaching the crowd...'
         },
         {
             text: "Side with the Pharisees",
             change: -10,
-            response: ""
+            response: 'The Pharisee\'s words stir up a sudden unsecurity. You have eaten with unclean hands as well! How could I blatant disobey God\'s Law?? How could this "Rabbi" do the same as well? As you look up with a chip on your shoulder, Jesus speaks, "as it is written: \'These people honor me with their lips, but their hearts are far from me. They worship me in vain; their teachings are merely human rules.\' You have let go of the commands of God and are holding on to human traditions." For a moment, you could hear a quill drop from the next valley over. Jesus says, "You have a fine way of setting aside the commands of God in order to observe your own traditions! For Moses said, \‘Honor your father and mother,\’ and, ‘Anyone who curses their father or mother is to be put to death.\’ But you say that if anyone declares that what might have been used to help their father or mother is Corban (that is, devoted to God)— then you no longer let them do anything for their father or mother. Thus you nullify the word of God by your tradition that you have handed down. And you do many things like that." All stand speechless as Jesus begins teaching the crowd... '
         },
         {
             text: "Attempt to leave",
             change: -5,
-            response: ""
+            response: 'Feeling fearful of the oncoming conflict, you walk down the hill to join the gathering crowd. You see Jesus speak, and then the Pharisee slumps slowly before puffing up his chest while walking off. Jesus then turns to look at the crowd, and for a moment, he makes eye contact with you, "Listen to me, everyone, and understand this. Nothing outside a person can defile them by going into them. Rather, it is what comes out of a person that defiles them." You understand now why the Pharisee was so upset, and why Jesus could not be tried any longer.'
         }
     ]
 }, {
