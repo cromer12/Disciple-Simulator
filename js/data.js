@@ -222,23 +222,23 @@ let diaoptions = [{
 }, {
     question: {
         title: "Tax Collection",
-        text: 'You head to Jerusalem for the Passover celebration. As you are walking through the market square, you see a large crowd standing in a circle. You approach to see what has caused such a great gathering. There is are some Pharisees and Herodians talking to Jesus. "Teacher, we know that you are a man of integrity. You aren’t swayed by others, because you pay no attention to who they are; but you teach the way of God in accordance with the truth. Is it right to pay the imperial tax to Caesar or not? Should we pay or shouldn’t we?"'
+        text: 'You head to Jerusalem for the Passover celebration. As you are walking through the market square, you see a large crowd standing in a circle. You approach to see what has caused such a great gathering. There is are some Pharisees and Herodians talking to Jesus. "Teacher, we know that you are a man of integrity. You aren\'t swayed by others, because you pay no attention to who they are; but you teach the way of God in accordance with the truth. Is it right to pay the imperial tax to Caesar or not? Should we pay or shouldn\'t we?"'
     },
 
     dialog: [{
             text: "Reach your hand into your coin purse",
             change: 5,
-            response: ""
+            response: 'Suddenly, you feel the urge to reach in your pocket and pull out a denarius. You begin to roll it around in your fingers. Just then you wake up to hear, “bring me a denarius and let me look at it," and see Jesus looking at you holding out his hand. You bring Jesus the denarius and he asks “Whose image is this? And whose inscription?” "Caesar’s," the crowd replies. Then Jesus says, "Give back to Caesar what is Caesar’s and to God what is God’s," and pushes the coin back into your hand. Everyone was amazed by such a truth stated so plainly. You walk away from the crowd with Jesus\'s words still repeating in your mind.'
         },
         {
             text: 'Shout, "Why trap an innocent man!?"',
             change: 10,
-            response: ""
+            response: 'You shout draws the attention of the crowd around you. One man looks angry at your shout and another joins in shouting, "That is right! This man is blameless!" A few moment later Jesus speaks, “bring me a denarius and let me look at it," and see Jesus looking at you holding out his hand. You see a Pharisee forcibly place a coin in Jesus\'s hand. Jesus asks “Whose image is this? And whose inscription?” "Caesar’s," the crowd replies. Then Jesus says, "Give back to Caesar what is Caesar’s and to God what is God’s" You begin to cheer loudly as the you see the Pharisees hang their heads at this failed attempt to entrap Jesus. You leave the gathering feeling encouraged and empowered.'
         },
         {
             text: 'Leave shouting, "Guards!"',
             change: -10,
-            response: ""
+            response: 'As you exit the crowd, you begin to open your mouth to shout and you hear an older lady say, "I wouldn\'t do that if I were you. I would hate to see this encounter interrupted." You look down to see the same older lady from Capernaum. Shocked you say, "are you following me? I saw you a few weeks ago in Capernaum?" She laughs with a slight whistle, "follow you? No, I am following that man over there," and she points toward Jesus. As you turn around to follow her finger, you bump into into a guard and almost knock him over. "Watch where you are going, I should arrest you!" says the guard. You quickly apologize and the guard walks away from you. You turn to talk to the older woman and discover she has vanished! "She must have left when she saw the guard... I would have too," you think. You leave to go to make your purchases, but you cannot shake the feeling that she may have been a ghost...'
         },
         {
             text: 'Push your way through the crowds for a better look',
