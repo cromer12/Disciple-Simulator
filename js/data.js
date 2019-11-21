@@ -2,7 +2,7 @@ let diaoptions = [{
 
     question: {
         title: "By Water",
-        text: "You see a large crowd gathing by the Jordan. In the water is a man wearing camel's skin and he is about to submerge a Jew. What do you do?"
+        text: "You see a large crowd gathering by the Jordan. In the water is a man wearing camel's skin and he is about to submerge a Jew. What do you do?"
     },
 
     dialog: [{
@@ -11,12 +11,12 @@ let diaoptions = [{
             //set change values negative to reduce meter
             change: -2,
             //reponse to go in story box
-            response: 'You see one man dunk the other into the water. As the dunked is raised up, you see the sky split open and a dove desends down towards the one in the water. You feel the ground rumble as the words, "You are my Son, whom I love; with you I am well pleased," echo throughout all the land. You decide to follow this man to uncover the mystery of this experience.'
+            response: 'You see one man dunk the other into the water. As the dunked one is raised up, you see the sky split open and a dove desends down towards the one in the water. You feel the ground rumble as the words, "You are my Son, whom I love; with you I am well pleased," echo throughout all the land. You decide to follow this man to uncover the mystery of this experience.'
         },
         {
             text: "Leave the crowd",
             change: -5,
-            response: "You shrug at the sight of these men standing in the water. You turn your back and contiue on your way to Capernaum. On the way, you sense a slight shake coming from the ground below followed by a crack of thunder. You look around, caught off guard by these strange occurances. Seeing nothing around you that indicates danger, you relax and contiue on your way"
+            response: "You shrug at the sight of these men standing in the water. You turn your back and continue on your way to Capernaum. On the way, you sense a slight shake coming from the ground below followed by a crack of thunder. You look around, caught off guard by these strange occurances. Seeing nothing around you that indicates danger, you relax and continue on your way"
         },
         {
             text: "Approach the river's edge",
@@ -39,12 +39,12 @@ let diaoptions = [{
     dialog: [{
             text: "Follow the three men and see where they are in such a hurry to",
             change: 2,
-            response: 'You run to catch up with the three men. As they turn the corner, you hear the low rumble of a crowd. You turn the corner and see a house with people littered everywhere. There are people lining the steps, peeking into the windows, and busting through the entryways. You notice that the three men you saw earlier are on the roof now. You hear a loud "crack," they remove the section of the roof and lower the man down. A moment passes and a man holding the same stretcher comes brusting from the front door! He is now walking and shouting that a man has healed him! The stranger you saw at the river earlier enters your mind. You wonder for a moment, and seeing no way into the house, decide to leave.'
+            response: 'You run to catch up with the three men. As they turn the corner, you hear the low rumble of a crowd. You turn the corner and see a house with people littered everywhere. There are people lining the steps, peeking into the windows, and bursting through the entryways. You notice that the three men you saw earlier are on the roof now. You hear a loud "crack," they remove the section of the roof and lower the man down. A moment passes and a man holding the same stretcher comes brusting from the front door! He is now walking and shouting that a man has healed him! The stranger you saw at the river earlier enters your mind. You wonder for a moment, and seeing no way into the house, decide to leave.'
         },
         {
-            text: "Step out of the way and contiue on your way",
+            text: "Step out of the way and continue on your way",
             change: -5,
-            response: "You sidestep the trio at the last second. As they pass you, you get a look at the face of the man on the stretcher. His face is hallow and he appears to be in pain. You grimace at the sight of this poor soul. After they have passed, you contiue on your way down the streets of Capernaum toward the synagogue."
+            response: "You sidestep the trio at the last second. As they pass you, you get a look at the face of the man on the stretcher. His face is hallow and he appears to be in pain. You grimace at the sight of this poor soul. After they have passed, you continue on your way down the streets of Capernaum toward the synagogue."
         },
         {
             text: "Stick out your foot",
@@ -54,13 +54,13 @@ let diaoptions = [{
         {
             text: 'Run after them and while shouting, "Allow me to help you!"',
             change: 10,
-            response: 'You turn and sprint towards the group, "Let me help you with this end!" You catch up and grab a corner of the stretcher. "Not a moment too soon," remarks the man beside you, "My arms were about to give out." You contiue with the group until you reach a house overflowing with people. "How are we going to get him inside?" asks one of the men up front. "There is not anyone on the roof! Quickly now!" states the man beside you. You head to the roof, stretcher in tow, and begin peeling the roof off of the building. Within a few moments, you see the man who had been in the river yesterday looking up at you. Stunned, you fall backwards away from the hole as the trio lowers the stretcher down into the hole. A moment passes and you hear a shout, "I am healed!" Walking out of front door is the man you just brought to the roof on a stretcher. You look down the hole and see that the man from the river has vanished before you could speak with him. Frustrated, you get down from the roof and head towards the synagogue.'
+            response: 'You turn and sprint towards the group, "Let me help you with this end!" You catch up and grab a corner of the stretcher. "Not a moment too soon," remarks the man beside you, "My arms were about to give out." You continue with the group until you reach a house overflowing with people. "How are we going to get him inside?" asks one of the men up front. "There is not anyone on the roof! Quickly now!" states the man beside you. You head to the roof, stretcher in tow, and begin peeling the roof off of the building. Within a few moments, you see the man who had been in the river yesterday looking up at you. Stunned, you fall backwards away from the hole as the trio lowers the stretcher down into the hole. A moment passes and you hear a shout, "I am healed!" Walking out of front door is the man you just brought to the roof on a stretcher. You look down the hole and see that the man from the river has vanished before you could speak with him. Frustrated, you get down from the roof and head towards the synagogue.'
         }
     ]
 }, {
     question: {
         title: "Sabbath Miracle",
-        text: '"Stand up in front of everyone," he states. It is the same man you have seen before. He looks similar to other Jewish man to you, but there is something unshakable about his presence. Beside him stands another man with a disformed hand. The familiar man contiues, “Which is lawful on the Sabbath: to do good or to do evil, to save life or to kill?”'
+        text: '"Stand up in front of everyone," he states. It is the same man you have seen before. He looks similar to other Jewish man to you, but there is something unshakable about his presence. Beside him stands another man with a disformed hand. The familiar man continues, “Which is lawful on the Sabbath: to do good or to do evil, to save life or to kill?”'
     },
 
     dialog: [{
@@ -96,7 +96,7 @@ let diaoptions = [{
             response: "You wrapped your arms angrily around yourself, upset you missed the teaching. The woman seeing your posture offers to tell you the teaching. You agree to listen and after about an hour, she has finished reciting the parables. You thank her, she leaves, and you doze off beside the fire."
         },
         {
-            text: 'Having no idea what she is talkig about you quip, "Of course, God can take any seed and make it bare fruit!!"',
+            text: 'Having no idea what she is talking about you quip, "Of course, God can take any seed and make it bear fruit!!"',
             change: -15,
             response: "Her eyes narrow as she sees right through your lie. Irritated by your attempt at lying, she huffs as gets up and finds another group of people to chat with. Shortly after she leaves, the others around the fire leave as well leaving you alone. Saddened by the outcome of your actions, you find solace in a good night's rest."
         },
@@ -114,7 +114,7 @@ let diaoptions = [{
 }, {
     question: {
         title: "Lost and Found",
-        text: "You wake in the morning to find that most of people have left. You also notice Jesus and his followers are gone as well. Saddened by this discovery you head back to town and spend the next few weeks laboring in a vineyard. Coming to collect your pay, you here a laborer mention that someone in town mentioned Jesus. You go to town, purchase some bread and a fish, and search hoping to find Jesus and instead find a man named Peter preaching."
+        text: "You wake in the morning to find that most of people have left. You also notice Jesus and his followers are gone as well. Saddened by this discovery you head back to town and spend the next few weeks laboring in a vineyard. Coming to collect your pay, you hear a laborer mention that someone in town mentioned Jesus. You go to town, purchase some bread and a fish, and search hoping to find Jesus and instead find a man named Peter preaching."
     },
 
     dialog: [{
@@ -130,7 +130,7 @@ let diaoptions = [{
         {
             text: "Try to blend into the crowd and keep your distance",
             change: -3,
-            response: "You make your way up to the back of the crowd. You pull your cloak over your head and get close enough to Peter to hear him. As your making your way through the crowd, you make eye contact with a guard. He makes a suspicious squint and you duck and turn the otherway. Luckily, the guard does not think much more of you. You keep your position in the crowd and follow Peter out of town."
+            response: "You make your way up to the back of the crowd. You pull your cloak over your head and get close enough to Peter to hear him. As you're making your way through the crowd, you make eye contact with a guard. He makes a suspicious squint and you duck and turn another way. Luckily, the guard does not think much more of you. You keep your position in the crowd and follow Peter out of town."
         },
         {
             text: "Speak against Peter's teachings",
@@ -152,7 +152,7 @@ let diaoptions = [{
         {
             text: "Give him a fish you bought from town a few hours ago",
             change: 10,
-            response: '"I have just the thing," you say handing Peter a fish. "I bought it only an hour ago, it is still fresh!" you state with enthusiasm. Peter gladly takes the fish from you and quickly returns to Jesus. He takes the fish, gives it to Jesus, bread is broken, and basket upon basket is filled with food as Jesus is blessing it. You a filled with joy knowing your bread had a part to play in this miracle.'
+            response: '"I have just the thing," you say handing Peter a fish. "I bought it only an hour ago, it is still fresh!" you state with enthusiasm. Peter gladly takes the fish from you and quickly returns to Jesus. He takes the fish, gives it to Jesus, bread is broken, and basket upon basket is filled with food as Jesus is blessing it. You are filled with joy knowing your bread had a part to play in this miracle.'
         },
         {
             text: "Tell him you have nothing to spare",
@@ -195,7 +195,7 @@ let diaoptions = [{
 }, {
     question: {
         title: "Divorce Law",
-        text: 'You travel the countyside with Jesus\'s following. You witness a blind man healed, another meal for thousands appears from no where, and a demon is casted out from a boy. Finally after crossing the Jordan, a group of pharisees approaches Jesus again. You catch words of divorce and decide to move closer to the converstaion. "Moses permitted a man to write a certificate of divorce and send her away," said the Pharisee who started the confrontation. Jesus pauses with a slight grimace on his face. "It was because your hearts were hard that Moses wrote you this law,” he said in a low tone.'
+        text: 'You travel the countyside with Jesus\'s following. You witness a blind man healed, another meal for thousands appears from no where, and a demon is casted out from a boy. Finally after crossing the Jordan, a group of Pharisees approaches Jesus again. You catch words of divorce and decide to move closer to the converstaion. "Moses permitted a man to write a certificate of divorce and send her away," said the Pharisee who started the confrontation. Jesus pauses with a slight grimace on his face. "It was because your hearts were hard that Moses wrote you this law,” he said in a low tone.'
     },
 
     dialog: [{
@@ -222,7 +222,7 @@ let diaoptions = [{
 }, {
     question: {
         title: "Tax Collection",
-        text: 'You head to Jerusalem for the Passover celebration. As you are walking through the market square, you see a large crowd standing in a circle. You approach to see what has caused such a great gathering. There is are some Pharisees and Herodians talking to Jesus. "Teacher, we know that you are a man of integrity. You aren\'t swayed by others, because you pay no attention to who they are; but you teach the way of God in accordance with the truth. Is it right to pay the imperial tax to Caesar or not? Should we pay or shouldn\'t we?"'
+        text: 'You head to Jerusalem for the Passover celebration. As you are walking through the market square, you see a large crowd standing in a circle. You approach to see what has caused such a great gathering. There are some Pharisees and Herodians talking to Jesus. "Teacher, we know that you are a man of integrity. You aren\'t swayed by others, because you pay no attention to who they are; but you teach the way of God in accordance with the truth. Is it right to pay the imperial tax to Caesar or not? Should we pay or shouldn\'t we?"'
     },
 
     dialog: [{
