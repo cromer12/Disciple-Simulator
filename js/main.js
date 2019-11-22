@@ -89,18 +89,7 @@ function win() {
     $("#story-container").html(mark);
     $("#story-container").css("padding-top", "0px");
     $("#story-container").css("padding-bottom", "0px");
-
-    //edit the second paramater to prolong screen time of scrolling text
-    setTimeout(function () {
-        $('body').html('<div id="overlay"></div>')
-        //do what you need here
-        $('#overlay').animate({
-            opacity: 1,
-        }, 5000, function () {
-            // Animation complete.
-        });
-    }, 30000);
-
+    $("#story-container").attr('id', 'scrollingBox')
 }
 
 //gameover
@@ -122,11 +111,37 @@ function gameover(type) {
     $("#response").css("display", "none");
     $("#story-text").css("display", "none");
 
-    //display gameover
-    $("#gameover-text").addClass("display");
-    //display reset button
-    $("#gameover-btn").addClass("display");
-    $("#story-title").text("Game Over");
+    if(type == 0){
+        //display gameover
+        $("#gameover-text").addClass("display");
+        $("#gameover-text").text("gameover 0");
+        //display reset button
+        $("#gameover-btn").addClass("display");
+        $("#story-title").text("Game Over");
+    } else if(type == 1){
+        //display gameover
+        $("#gameover-text").addClass("display");
+        $("#gameover-text").text("gameover 1");
+        //display reset button
+        $("#gameover-btn").addClass("display");
+        $("#story-title").text("Game Over");
+    }else{
+       
+    }
+    
+}
+
+function fadeout(){
+    //edit the second paramater to prolong screen time of scrolling text
+    setTimeout(function () {
+        $('body').html('<div id="overlay"></div>');
+        //do what you need here
+        $('#overlay').animate({
+            opacity: 1,
+        }, 5000, function () {
+            // Animation complete.
+        });
+    }, 5000);
 }
 
 function nextquestion() {
@@ -233,6 +248,4 @@ $(document).ready(function () {
             buttons();
         }
     });
-
-
 });

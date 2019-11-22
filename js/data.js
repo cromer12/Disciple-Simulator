@@ -255,7 +255,7 @@ let diaoptions = [{
     dialog: [{
             text: 'Shout, "Release Jesus! He is blameless!"',
             change: 5,
-            response: "helpless"
+            response: 'You shout as loudly as you can. You feel your voice give out under the shouts you are producing. Sadly, the crowd is so loud you cannot even hear your own shouts. You shout even more only to hear the crowd increase in volume as well. The chanting of "Barabbas! Give us Barabbas!!" breaks your spirit. You see Pilate guesture towards Barabbas, and the guards release his binds. You feel as if a mighty weight is placed on your shoulders. Dropping to your knees, tears begin to flow down your cheeks. You feel hopeless to stop this situation.'
         },
         {
             text: 'Follow the crowd by shouting, "crucify him!"',
