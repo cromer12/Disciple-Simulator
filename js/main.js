@@ -1,3 +1,10 @@
+/*
+*todo:
+    game over text for 0 and 1
+    scrolling marque text at end of game text
+*
+*/
+
 let options = diaoptions;
 let q = 0;
 
@@ -111,27 +118,27 @@ function gameover(type) {
     $("#response").css("display", "none");
     $("#story-text").css("display", "none");
 
-    if(type == 0){
+    if (type == 0) {
         //display gameover
         $("#gameover-text").addClass("display");
         $("#gameover-text").text("gameover 0");
         //display reset button
         $("#gameover-btn").addClass("display");
         $("#story-title").text("Game Over");
-    } else if(type == 1){
+    } else if (type == 1) {
         //display gameover
         $("#gameover-text").addClass("display");
         $("#gameover-text").text("gameover 1");
         //display reset button
         $("#gameover-btn").addClass("display");
         $("#story-title").text("Game Over");
-    }else{
-       
+    } else {
+
     }
-    
+
 }
 
-function fadeout(){
+function fadeout() {
     //edit the second paramater to prolong screen time of scrolling text
     setTimeout(function () {
         $('body').html('<div id="overlay"></div>');
