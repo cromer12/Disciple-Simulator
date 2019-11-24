@@ -38,12 +38,13 @@ body {
 }
 
 hr {
+    border-top: 3px solid rgb(0, 0, 0);
     border-top: 3px solid rgba(0, 0, 0, 0.1) !important;
 }
 
 .footer {
     flex-shrink: 0;
-    padding-right: 20px;
+    padding-right: 20%;
 }
 
 .content {
@@ -67,6 +68,7 @@ hr {
 
 #rules {
     font-size: 1.5rem;
+    background-color: rgb(255, 193, 7);
     background-color: rgba(255, 193, 7, .2);
     border-radius: 25px;
 }
