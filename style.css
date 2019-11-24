@@ -1,26 +1,27 @@
-
-@media only screen  and (min-width : 1224px) {
-    body{
+@media only screen and (min-width : 1224px) {
+    body {
         zoom: 0.80;
         -moz-transform: scale(0.80);
     }
+
     .progress-bar-vertical {
         zoom: 0.75;
         -moz-transform: scale(0.75);
     }
-    }
-    
-    /* Large screens ----------- */
-    @media only screen  and (min-width : 1824px) {
-        body{
-            zoom: 0.75;
-            -moz-transform: scale(0.75);
-        }
-        .progress-bar-vertical {
-            zoom: 0.75;
+}
+
+/* Large screens ----------- */
+@media only screen and (min-width : 1824px) {
+    body {
+        zoom: 0.75;
         -moz-transform: scale(0.75);
-        }
     }
+
+    .progress-bar-vertical {
+        zoom: 0.75;
+        -moz-transform: scale(0.75);
+    }
+}
 
 * {
     font-family: 'Merienda One', cursive;
@@ -51,6 +52,12 @@ hr {
 
 #title-text {
     font-size: 4rem;
+}
+
+#rules {
+    font-size: 1.5rem;
+    background-color: rgba(255, 193, 7, .2);
+    border-radius: 25px;
 }
 
 #title-wrapper {
