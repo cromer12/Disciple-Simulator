@@ -91,7 +91,7 @@ function showresponse() {
 //win
 function win() {
     gameover(2);
-    let txt = 'aliquet nec ullamcorper sit amet risus nullam eget felis eget nunc lobortis mattis aliquam faucibus purus in massa tempor nec feugiat nisl pretium fusce id velit ut tortor pretium viverra suspendisse potenti nullam ac tortor vitae purus faucibus ornare suspendisse sed nisi lacus sed viverra tellus in hac habitasse platea dictumst vestibulum rhoncus est pellentesque elit ullamcorper dignissim cras tincidunt lobortis feugiat vivamus at augue eget arcu dictum varius duis at consectetur lorem donec massa sapien faucibus et molestie ac feugiat sed lectus vestibulum mattis ullamcorper velit sed ullamcorper morbi tincidunt ornare massa eget egestas purus viverra accumsan in nisl';
+    let txt = 'You are there when Jesus is crucified. The crowds surrounding him are hurling insults like stones.  You are close enough to him to hear him cry, "My God, my God, why have you forsaken me?" as he draws his last breath. The sky grew dark as Jesus\'s lifeless body hung there. "Surely," you hear a soldier say, "this man was the Son of God." You depart, head hung low, to the city to mourn Jesus\'s loss. You feel as if your own father has died; your heart is cold and your mind is empty of all thought. After a few days of mourning, you walk down the street to leave for your home. You see a woman running down the street. She is shouting something; you can barely make the words out. "He lives! He lives!" you hear as a faint echo. "Truly I tell you, he lives!" you feel as if you swallowed a brick. The weight in your stomach sudden turns into your heart racing. "He lives?" you ask yourself.  The burden falls from your heart and you have faith. "He lives!" you shout!';
     let mark = '<marquee behavior="scroll" direction="up" scrollamount="3" loop="1">' + txt + '</marquee>';
     $("#story-container").html(mark);
     $("#story-container").css("padding-top", "0px");
@@ -101,14 +101,6 @@ function win() {
 
 //gameover
 function gameover(type) {
-    //display gameover screen in reponse text. make it creative please.
-    //if is a low gameover 0
-    //Your huberious ways have made you an enemy of the Romen government. Because of that you are captured and imprisoned
-    //if is a high gameover 1
-    //your presence with Jesus becomes noticed and you are also seen as a threat to the Jewish ways leading being unjustily imprisoned
-
-    //if is a win gameover 2
-    //just hide everything
 
     //hide all elements
     $("#dia-1").css("display", "none");
