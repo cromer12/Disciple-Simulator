@@ -121,17 +121,17 @@ function gameover(type) {
     if (type == 0) {
         //display gameover
         $("#gameover-text").addClass("display");
-        $("#gameover-text").text("gameover 0");
+        $("#gameover-text").text('You are walking, minding your own business when suddenly, a man grabs the back of your arm. You struggle for only an instant before you are tackled to the ground by the man. "You are going away for a long time boy," growls the man behind you. You realize you are being arrested for your social misconduct.  You are bound and thrown into a jail cell. It will be five years before you see the light of day again. One night while you are sleeping in your cell, a loud crack fills the entire prison. You jump to your feet to see your cell door wide open. You run out to see the guard about to fall his sword and a man running from his cell to stop him. "Do not take your own life," shouts the prisoner, "We are all still here!" You approach this man and find out his name is Peter. You hear of Jesus and his story; you decide to become one of his followers.');
         //display reset button
         $("#gameover-btn").addClass("display");
-        $("#story-title").text("Game Over");
+        $("#story-title").text("Roman Prison");
     } else if (type == 1) {
         //display gameover
         $("#gameover-text").addClass("display");
-        $("#gameover-text").text("gameover 1");
+        $("#gameover-text").text('You walk into a synagogue and two Pharisees walk up to you. "Hello brother," they say, "We need to speak to you outside." You step out with the pair. "Your presence with Jesus been noticed," one of the men say, "and, as I am sure you understand, that makes you a threat and enemy to the temple." Stunned by their words, you are bound. A few days later you appear before a Jewish court. "Stone this heretic!" shouts one of the men. You are locked up until after Passover. . . Today is your last day. Looking up, you see a stone as large as chest hanging fifteen feet in the air. You are not first to die for a belief outside of Judaism, but as you take your dying breath, Jesus appears to you. It is almost as if he is floating in mid-air. There are wounds on his hands and feet. Suddenly, your heart jumps and the words "Jesus, I believe in you," flow from your lips. There is a loud crack, then all that you can see is Jesus. Brilliant light bursts forth filling you sight "Son," he says, "Your sins, are forgiven; Welcome Home." ');
         //display reset button
         $("#gameover-btn").addClass("display");
-        $("#story-title").text("Game Over");
+        $("#story-title").text("Jewish End");
     } else {
 
     }
