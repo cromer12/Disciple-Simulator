@@ -1,3 +1,18 @@
+@media only screen and (max-width: 575px) {
+    /* For mobile phones: */
+    .mobile-header{
+        display: block !important;
+    }
+    body {
+        zoom: 0.60;
+        -moz-transform: scale(0.60);
+    }
+    #bar-container{
+        display: none !important;
+    }
+}
+
+
 @media only screen and (min-width : 1224px) {
     body {
         zoom: 0.80;
@@ -180,6 +195,10 @@ input[type="image"] {
 
 .nodisplay {
     display: none !important;
+}
+
+.mobile-header{
+    display: none;
 }
 
 marquee {

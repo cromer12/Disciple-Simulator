@@ -1,55 +1,98 @@
-/*
-*todo:
-    game over text for 0 and 1
-    scrolling marque text at end of game text
-*
-*/
-
 let options = diaoptions;
 let q = 0;
+let barselection;
+let bar;
+let percent;
+let barnum;
+let barheight;
 
 //add pixels and changes bar color depeneding on the level of public opinion
 function addpx(px, toadd) {
-    let barnum = (parseInt(px.replace(/px/, "")) + parseInt(toadd * 10));
-    let barheight = $(".progress-bar-vertical").css("min-height");
+
+    if(bar.attr('id') == "bar"){
+    barnum = (parseInt(px.replace(/px/, "")) + parseInt(toadd * 10));
+    barheight = barselection.css("min-height");
     barheight = (parseInt(barheight.replace(/px/, "")));
-    let percent = barnum / barheight;
+    percent = barnum / barheight;
     percent = percent * 100;
 
     if (percent > 99.99) {
         //high gameover
-        $("#bar").removeClass("bg-success");
-        $("#bar").addClass("bg-danger");
-        $("#bar").css({
+        bar.removeClass("bg-success");
+        bar.addClass("bg-danger");
+        bar.css({
             "height": "700px"
         });
         gameover(1);
     } else if (percent < 0) {
         //low gameover
-        $("#bar").css({
+        bar.css({
             "height": "0px"
         });
         gameover(0);
     } else if (percent < 100 && percent > 75) {
         //bar is yellow for high
-        $("#bar").removeClass("bg-success");
-        $("#bar").removeClass("bg-warning");
-        $("#bar").addClass("bg-warning");
+        bar.removeClass("bg-success");
+        bar.removeClass("bg-warning");
+        bar.addClass("bg-warning");
     } else if (percent < 75 && percent > 25) {
         //bar is green
-        $("#bar").removeClass("bg-warning");
-        $("#bar").removeClass("bg-success");
-        $("#bar").addClass("bg-success");
+        bar.removeClass("bg-warning");
+        bar.removeClass("bg-success");
+        bar.addClass("bg-success");
     } else if (percent < 25) {
         //bar is yellow for low
-        $("#bar").removeClass("bg-success");
-        $("#bar").removeClass("bg-warning");
-        $("#bar").addClass("bg-warning");
+        bar.removeClass("bg-success");
+        bar.removeClass("bg-warning");
+        bar.addClass("bg-warning");
     }
 
     //add px back to string and return
     barnum = barnum + "px";
     return barnum;
+    }else{
+        //mobile mode
+        barnum = (parseInt(px.replace(/px/, "")) + parseInt(toadd * 10));
+    barheight = barselection.css("width");
+    barheight = (parseInt(barheight.replace(/px/, "")));
+    percent = barnum / ($("body").css("width").replace(/px/, "")*.70);
+    percent = percent * 100;
+
+    if (percent > 99.99) {
+        //high gameover
+        bar.removeClass("bg-success");
+        bar.addClass("bg-danger");
+        bar.css({
+            "width": "700px"
+        });
+        gameover(1);
+    } else if (percent < 0) {
+        //low gameover
+        bar.css({
+            "width": "0px"
+        });
+        gameover(0);
+    } else if (percent < 100 && percent > 75) {
+        //bar is yellow for high
+        bar.removeClass("bg-success");
+        bar.removeClass("bg-warning");
+        bar.addClass("bg-warning");
+    } else if (percent < 75 && percent > 25) {
+        //bar is green
+        bar.removeClass("bg-warning");
+        bar.removeClass("bg-success");
+        bar.addClass("bg-success");
+    } else if (percent < 25) {
+        //bar is yellow for low
+        bar.removeClass("bg-success");
+        bar.removeClass("bg-warning");
+        bar.addClass("bg-warning");
+    }
+
+    //add px back to string and return
+    barnum = barnum + "px";
+    return barnum;
+    }
 
 }
 
@@ -161,6 +204,13 @@ $(document).ready(function () {
     $("#start-btn").click(function () {
         $("#title-container").toggleClass("display");
         $("#story-container").toggleClass("display");
+        if($("#mobile-bar").is(":visible")){
+            barselection = $("#mobile-bar");
+            bar = $("#mobile-bar");
+        }else{
+            barselection = $(".progress-bar-vertical");
+            bar = $("#bar");
+        }
     });
 
     //choice 1 listener
@@ -168,9 +218,15 @@ $(document).ready(function () {
         //get choice
         choice = options[q].dialog[$("#dia-1").data('id')];
         //change bar height
-        $("#bar").css({
-            "height": addpx($("#bar").css('height'), choice.change)
-        });
+        if(bar.attr('id') == "bar"){
+            bar.css({
+                "height": addpx(bar.css('height'), choice.change)
+            });
+        }else{
+            bar.css({
+                "width": addpx(bar.css('width'), choice.change)
+            });
+         }
         //add response text  to response box
         $("#response-text").text(choice.response);
         //hide all buttons
@@ -184,9 +240,15 @@ $(document).ready(function () {
         //get choice
         choice = options[q].dialog[$("#dia-2").data('id')];
         //change bar height
-        $("#bar").css({
-            "height": addpx($("#bar").css('height'), choice.change)
-        });
+        if(bar.attr('id') == "bar"){
+            bar.css({
+                "height": addpx(bar.css('height'), choice.change)
+            });
+        }else{
+            bar.css({
+                "width": addpx(bar.css('width'), choice.change)
+            });
+        }
         //add response text  to response box
         $("#response-text").text(choice.response);
         //hide all buttons
@@ -201,9 +263,15 @@ $(document).ready(function () {
         //get choice
         choice = options[q].dialog[$("#dia-3").data('id')];
         //change bar height
-        $("#bar").css({
-            "height": addpx($("#bar").css('height'), choice.change)
-        });
+        if(bar.attr('id') == "bar"){
+            bar.css({
+                "height": addpx(bar.css('height'), choice.change)
+            });
+        }else{
+            bar.css({
+                "width": addpx(bar.css('width'), choice.change)
+            });
+        }
         //add response text  to response box
         $("#response-text").text(choice.response);
         //hide all buttons
@@ -218,9 +286,15 @@ $(document).ready(function () {
         //get choice
         choice = options[q].dialog[$("#dia-4").data('id')];
         //change bar height
-        $("#bar").css({
-            "height": addpx($("#bar").css('height'), choice.change)
-        });
+        if(bar.attr('id') == "bar"){
+            bar.css({
+                "height": addpx(bar.css('height'), choice.change)
+            });
+        }else{
+            bar.css({
+                "width": addpx(bar.css('width'), choice.change)
+            });
+        }
         //add response text  to response box
         $("#response-text").text(choice.response);
         //hide all buttons
