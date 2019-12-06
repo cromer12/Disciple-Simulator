@@ -45,6 +45,9 @@ hr {
 .footer {
     flex-shrink: 0;
     padding-right: 20%;
+    padding-left: 20%;
+    margin-bottom: 0.25%;
+    position: relative;
 }
 
 .content {
@@ -54,6 +57,16 @@ hr {
 [id*="container"] {
     padding-top: 15px;
     padding-bottom: 15px;
+}
+
+input[type="image"] {
+    width: 100px;
+}
+
+#donate {
+    position: absolute;
+    bottom: 0;
+    float: left;
 }
 
 /* Title Container */
